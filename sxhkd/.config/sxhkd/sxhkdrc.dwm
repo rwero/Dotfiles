@@ -1,0 +1,88 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	alacritty
+
+# program launcher
+super + d
+	dmenu_run -i  -l 6 -nb black -sf black -sb gray -c -h 15  -fn "JetBrainsMono Nerd Font"
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+
+
+super + e 
+         dmenuunicode
+
+alt + shift+ t
+        ./dl/tor/Browser/start-tor-browser
+alt + n
+        pcmanfm
+alt + shift + n
+	alacritty -e nnn -d -C
+Print
+	screeny
+alt + Print
+	screeny -s
+
+super + Print
+	screeny -f
+
+
+XF86AudioRaiseVolume
+        pactl set-sink-volume 0 +5% #increase sound volume
+ctrl + alt + Up
+        pactl set-sink-volume 0 +5% #increase sound volume
+XF86AudioLowerVolume
+        pactl set-sink-volume 0 -5% #decrease sound volume
+ctrl + alt + Down
+        pactl set-sink-volume 0 -5% #decrease sound volume
+XF86AudioMute
+        pactl set-sink-mute 0 toggle # mute sound
+
+# Sreen brightness controls
+XF86MonBrightnessUp
+        xbacklight -inc 5 # increase screen brightness
+XF86MonBrightnessDown
+        xbacklight -dec 5 # decrease screen brightness
+
+#ad controls
+#XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+
+#player controls
+XF86AudioPlay
+        playerctl play
+XF86AudioPause
+        playerctl pause
+XF86AudioNext
+        playerctl next
+XF86AudioPrev
+        playerctl previous
+# Pause audio
+super + p
+	mpc toggle
+# Changes to next/previous tracks
+super + {less,greater}
+	mpc {prev,next}
+# Restart track
+# Seek foward in song
+super +  comma
+	mpc seek -10
+# Seek backward in song
+super +  semicolon
+	mpc seek +10
+
+# Manage Displays
+super + F1
+	display-1
+super + F2
+	display-2
+super + F3
+	display-3
+super + F4
+        dmenu_display

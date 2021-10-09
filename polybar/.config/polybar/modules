@@ -1,0 +1,197 @@
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:35:...%
+label-padding = 2
+
+
+[module/bspwm]
+type = internal/bspwm
+
+
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+
+
+label-focused = %icon%
+label-occupied = %icon%
+label-urgent = %icon%
+label-empty = %icon%
+
+label-empty-foreground = ${colors.white}
+label-focused-foreground = ${colors.blue}
+label-focused-padding = 1
+label-occupied-padding = 1
+label-empty-padding = 1
+label-urgent-foreground = ${colors.red}
+label-urgent-padding = 1
+
+
+[module/date]
+type = internal/date
+
+date-alt = %d-%m-%Y %H:%M:%S
+date = "%a %b %d %H:%M"
+format = <label>
+format-padding = 2
+label = %date%
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 80
+
+format-charging = <animation-charging>  <label-charging>
+format-discharging = <ramp-capacity>  <label-discharging>
+format-full = <ramp-capacity>
+
+label-charging = %percentage%%
+label-discharging = %percentage%%
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 750
+
+
+format-charging-foreground = ${colors.green}
+format-discharging-foreground = ${colors.foreground}
+format-full-foreground = ${colors.foreground}
+
+format-charging-padding = 1
+format-discharging-padding = 1
+format-full-padding =1
+
+[module/network]
+type = internal/network
+interface = wlp3s0
+interval = 3.0
+unknown-as-up = true
+accumulate-stats = true
+
+format-connected = <ramp-signal>
+format-connected-padding = 1
+format-disconnected-padding = 1
+
+ramp-signal-0 = 
+
+format-disconnected = 睊
+
+[module/battery1]
+type = internal/battery
+battery = BAT1
+adapter = AC
+full-at = 80
+
+format-charging = <animation-charging>  <label-charging>
+format-discharging = <ramp-capacity>  <label-discharging>
+format-full = <ramp-capacity>
+label-charging = %percentage%%
+label-discharging = %percentage%%
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 750
+
+
+format-charging-foreground = ${colors.green}
+format-discharging-foreground = ${colors.foreground}
+
+format-full-foreground = ${colors.foreground}
+
+format-charging-padding = 1
+format-discharging-padding = 1
+format-full-padding = 1
+
+[module/wired-network]
+type = internal/network
+interface = enp0s31f6
+interval = 3.0
+label-connected = 
+format-connected-padding = 1
+format-connected-foreground = ${colors.blue}
+label-connected-foreground = ${colors.foreground}
+
+[module/alsa]
+type = internal/alsa
+
+label-volume = %percentage%
+format-volume =<label-volume> <ramp-volume>
+label-muted = 
+format-muted-padding = 1
+format-volume-padding = 1
+
+
+ramp-volume-0 = ﱝ
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 墳
+ramp-volume-4 = 
+
+[module/backlight]
+type = internal/backlight
+
+card = intel_backlight
+enable-scroll = true
+format =  <label>
+format-padding = 1
+format-foreground = ${colors.yellow}
+label-foreground = ${colors.foreground}
+label = %percentage%%
+
+[module/cpu]
+type = internal/cpu
+
+format =  <label>
+format-foreground = ${colors.white}
+format-padding = 1
+label = %percentage%%
+label-foreground = ${colors.foreground}
+
+[module/memory]
+type = internal/memory
+interval = 3
+
+format =  <label>
+label = %percentage_used%%
+format-foreground = ${colors.white}
+label-foreground = ${colors.foreground}
+format-padding = 1
+
+[module/mpd]
+type = internal/mpd
+
+format-online =   <label-song>
+label-song =  %title%
+label-offline =
+format-online-foreground = ${colors.foreground}
+label-song-foreground = ${colors.foreground}
+format-online-padding = 1
+format-offline-padding = 1
