@@ -14,6 +14,7 @@ super + d
 super + Escape
 	pkill -USR1 -x sxhkd
 
+
 #
 # bspwm hotkeys
 #
@@ -50,6 +51,9 @@ super + t
 # # set the window state
 super + shift + @space
 	bspc node -t floating
+
+ctrl + alt + k
+        setxkbmap fr
 #
 # # set the node flags
 # super + ctrl + {m,x,y,z}
@@ -68,10 +72,10 @@ super + {_,shift + }{h,j,k,l}
 # 	bspc node -f @{parent,brother,first,second}
 #
 # focus the next/previous node in the current desktop
-super +  i
- 	bspc node -f next.local
-super +  u
- 	bspc node -f prev.local
+alt + Tab
+ 	bspc node -f next.local.window
+alt + shift + Tab
+ 	bspc node -f prev.local.window
 #
 # focus the next/previous desktop in the current monitor
 # super + bracket{left,right}
@@ -151,7 +155,9 @@ alt + shift+ t
 alt + shift+ n
         alacritty -e nnn -d -C
 alt + n
-        pcmanfm
+        nautilus
+alt + s
+        signal-desktop
 Print
 	screeny
 alt + Print

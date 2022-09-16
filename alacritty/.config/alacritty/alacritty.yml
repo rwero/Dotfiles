@@ -1,5 +1,6 @@
 # Colors (One Darker)
 # Note I am using alacritty-ligatures until ligatures make it upstream
+# gruvbox maybe
 colors:
   # Default colors
   primary:
@@ -33,6 +34,7 @@ colors:
     text: "#3B4252"
     cursor: "#ECEFF4"
 
+
 cursor:
   style:
     blinking: Never
@@ -40,22 +42,23 @@ cursor:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: JetBrainsMono Nerd Font Mono
+    family: Anonymice Nerd Font
     # Style can be specified to pick a specific face.
+    #
     style: Regular
 
   # The bold font face
   bold:
-    family: JetBrainsMono Nerd Font Mono    # Style can be specified to pick a specific face.
+    family: Anonymice Nerd Font    # Style can be specified to pick a specific face.
     style: Bold
 
   # The italic font face
   italic:
-    family: JetBrainsMono Nerd Font Mono
+    family: Anonymice Nerd Font
     # Style can be specified to pick a specific face.
     style: Italic
 
-  size: 10.0
+  size: 15.0
 
   ligatures: true
 
@@ -79,6 +82,7 @@ window:
 
 # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
+  opacity : 1
 
   # # If `true`, bold text is drawn using the bright color variants.
   # draw_bold_text_with_bright_colors: true
@@ -87,7 +91,7 @@ window:
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
   save_to_clipboard: true
   live_config_reload: true
-background_opacity: 0.7
+
 key_bindings:
   - { key: V, mods: Control|Shift, action: Paste }
   - { key: C, mods: Control|Shift, action: Copy }

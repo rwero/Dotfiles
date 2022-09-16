@@ -73,7 +73,7 @@ animation-charging-framerate = 750
 
 format-charging-foreground = ${colors.green}
 format-discharging-foreground = ${colors.foreground}
-format-full-foreground = ${colors.foreground}
+format-full-foreground = ${colors.green}
 
 format-charging-padding = 1
 format-discharging-padding = 1
@@ -124,7 +124,7 @@ animation-charging-framerate = 750
 format-charging-foreground = ${colors.green}
 format-discharging-foreground = ${colors.foreground}
 
-format-full-foreground = ${colors.foreground}
+format-full-foreground = ${colors.green}
 
 format-charging-padding = 1
 format-discharging-padding = 1
@@ -162,7 +162,7 @@ card = intel_backlight
 enable-scroll = true
 format =  <label>
 format-padding = 1
-format-foreground = ${colors.yellow}
+format-foreground = ${colors.foreground}
 label-foreground = ${colors.foreground}
 label = %percentage%%
 

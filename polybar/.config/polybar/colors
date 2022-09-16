@@ -1,6 +1,7 @@
 [colors]
 
-background = #373844
+
+background = #00000000
 foreground = #F8F8F2
 
 black   = #232531

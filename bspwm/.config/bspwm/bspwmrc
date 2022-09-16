@@ -8,7 +8,8 @@ sxhkd &
 #nitrogen --restore
 
 
-bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9
+bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 
+bspc monitor HDMI2 -d  9
 
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
@@ -21,24 +22,20 @@ bspc config top_padding 23
 bspc config focus_follows_pointer true
 bspc config pointer_follows_monitor true
 bspc config split_ratio          0.50
-bspc config borderless_monocle   true
+bspc config borderless_monocle   false
 bspc config gapless_monocle      false
 bspc config single_monocle       true
 bspc rule -a Firefox desktop='^2' follow=on
 bspc rule -a "Tor Browser" desktop='^5'
-bspc rule -a Brave desktop='^3'
+bspc rule -a Brave desktop='^2'
 bspc rule -a Lxappearance state=floating follow=on
+bspc rule -a Sxiv state=floating follow=on
+bspc rule -a Register.py state=floating follow=on
+bspc rule -a Admin.py state=floating follow=on
+
 #bspc rule -a com-sun-tools-javac-launcher-Main state=floating follow=on
 
-bsp-layout set tall 1
-bsp-layout set tall 2
-bsp-layout set tall 3
-bsp-layout set tall 4
-bsp-layout set tall 5
-bsp-layout set tall 6
-bsp-layout set tall 7
 bsp-layout set tall 8
-bsp-layout set tall 9
 
 xsetroot -cursor_name left_ptr
 setxkbmap -option caps:escape
