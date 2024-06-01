@@ -167,15 +167,15 @@ super + Print
 
 
 XF86AudioRaiseVolume
-        pactl set-sink-volume 0 +5% #increase sound volume
+        pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
 ctrl + alt + Up
-        pactl set-sink-volume 0 +5% #increase sound volume
+        pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
 XF86AudioLowerVolume
-        pactl set-sink-volume 0 -5% #decrease sound volume
+        pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 ctrl + alt + Down
-        pactl set-sink-volume 0 -5% #decrease sound volume
+        pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 XF86AudioMute
-        pactl set-sink-mute 0 toggle # mute sound
+        pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 # Sreen brightness controls
 XF86MonBrightnessUp
