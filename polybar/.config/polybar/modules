@@ -184,14 +184,3 @@ label = %percentage_used%%
 format-foreground = ${colors.white}
 label-foreground = ${colors.foreground}
 format-padding = 1
-
-[module/mpd]
-type = internal/mpd
-
-format-online =   <label-song>
-label-song =  %title%
-label-offline =
-format-online-foreground = ${colors.foreground}
-label-song-foreground = ${colors.foreground}
-format-online-padding = 1
-format-offline-padding = 1
