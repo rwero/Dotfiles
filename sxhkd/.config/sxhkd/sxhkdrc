@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	dmenu_run -i  -l 6 -nb black -sf black -sb gray -c -h 15  -fn "JetBrainsMono Nerd Font"
+	dmenu_run -i  -l 6  -c -h 15  -fn "JetBrainsMono Nerd Font"
 
 # make sxhkd reload its configuration files:
 super + Escape
