@@ -45,21 +45,33 @@ label-padding-left= 5px
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 80
+full-at = 99
+low-at = 20
 
-format-charging = <animation-charging>  <label-charging>
-format-discharging = <ramp-capacity>  <label-discharging>
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
 format-full = <ramp-capacity>
+format-low = <label-low> <ramp-capacity>
 
-label-charging = %percentage%%
-label-discharging = %percentage%%
+label-charging = %percentage%
+label-discharging = %percentage%
+label-low = %percentage%
+
+label-discharging-padding-left = 3px
+label-full-padding-left = 3px
+label-low-padding-left = 3px
+label-charging-padding-left = 3px
+label-discharging-padding-right = 1
+label-full-padding-right = 1
+label-low-padding-right = 1
+label-charging-padding-right = 1
+
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-
 
 animation-charging-0 = 
 animation-charging-1 = 
@@ -68,14 +80,11 @@ animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
 
-
 format-charging-foreground = ${colors.green}
 format-discharging-foreground = ${colors.foreground}
 format-full-foreground = ${colors.green}
+format-low-foreground = ${colors.red}
 
-format-charging-padding = 1
-format-discharging-padding = 1
-format-full-padding =1
 
 [module/network]
 type = internal/network
