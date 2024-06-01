@@ -25,15 +25,21 @@ label-empty = 󰑊
 label-empty-foreground = ${colors.black}
 label-empty-padding = 1
 
-
 [module/date]
 type = internal/date
 
-date-alt = %d-%m-%Y %H:%M:%S
-date = "%a %b %d %H:%M"
-format = <label>
-format-padding = 2
-label = %date%
+interval = 1.0
+
+time = %I:%M %P
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+date-alt = " %A, %d %B %Y"
+
+format = <label>
+format-padding = 1
+label = %date% %time%
+label-padding-left= 5px
+
 
 [module/battery]
 type = internal/battery
