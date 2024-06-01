@@ -28,16 +28,31 @@ type = internal/date
 
 interval = 1.0
 
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+date = " %a, %d %b %Y"
+
+format = <label>
+format-padding = 1
+
+label = %date%
+label-padding= 5px
+
+[module/time]
+type = internal/date
+
+interval = 1.0
+
 time = %I:%M %P
 format-background = ${colors.background}
 format-foreground = ${colors.foreground}
-date-alt = " %A, %d %B %Y"
 
 format = <label>
 format-padding = 1
 label = %date% %time%
 label-padding-left= 5px
 label-padding-right= 3px
+
 
 
 [module/battery]
