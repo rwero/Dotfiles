@@ -1,0 +1,117 @@
+import = ["~/.config/alacritty/catppuccin-mocha.toml"]
+
+[cursor.style]
+blinking = "Off"
+shape = "Underline"
+
+[font]
+size = 12
+
+[font.bold]
+family = "CaskaydiaCove Nerd Font"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "CaskaydiaCove Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Control"
+
+
+[window]
+decorations = "full"
+dynamic_title = true
+#history = 10000
+#live_config_reload = true
+opacity = 0.85
+#save_to_clipboard = true
+#semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mode =  "~Search"
+
+[[keyboard.bindings]]
+key = "PageUp"
+action = "ScrollPageUp"
+mode = "Search"
+
+[[keyboard.bindings]]
+key = "PageDown"
+action = "ScrollPageDown"
+mode = "Search"
+
+[[keyboard.bindings]]
+key = "Up"
+mods = "Control"
+action = "ScrollLineUp"
+
+[[keyboard.bindings]]
+key = "Down"
+mods = "Control"
+action = "ScrollLineDown"
+
+[[keyboard.bindings]]
+key = "K"
+mods = "Control|Shift"
+action = "ScrollLineUp"
+
+[[keyboard.bindings]]
+key = "J"
+mods = "Control|Shift"
+action = "ScrollLineDown"
+
+[[keyboard.bindings]]
+key = "U"
+mods = "Control|Shift"
+action = "ScrollHalfPageUp"
+
+[[keyboard.bindings]]
+key = "D"
+mods = "Control|Shift"
+action = "ScrollHalfPageDown"
+
+[window.padding]
+x = 5
+y = 5
