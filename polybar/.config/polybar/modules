@@ -3,10 +3,8 @@ type = internal/xwindow
 label = %title:0:35:...%
 label-padding = 2
 
-
 [module/bspwm]
 type = internal/bspwm
-
 
 format = <label-state>
 
@@ -39,6 +37,7 @@ format = <label>
 format-padding = 1
 label = %date% %time%
 label-padding-left= 5px
+label-padding-right= 3px
 
 
 [module/battery]
@@ -165,8 +164,7 @@ format-muted = <label-muted>
 
 label-muted = 
 format-muted-padding = 2
-format-volume-padding = 1
-
+format-volume-padding = 10px
 
 ramp-volume-0 = 
 ramp-volume-1 = 
