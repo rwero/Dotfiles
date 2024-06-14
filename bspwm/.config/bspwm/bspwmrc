@@ -9,7 +9,6 @@ picom &
 
 ~/.local/bin/battery_monitor.sh &
 
-~/dox/dotfiles/polybar/.config/polybar/launch.sh
 feh --no-fehbg --bg-fill /home/red/dox/wall/loki_nord.png &
 
 bspc monitor eDP1 -d 1 2 3 4 5 6 7 8
@@ -38,4 +37,4 @@ bsp-layout set tall 1
 xsetroot -cursor_name left_ptr
 setxkbmap -option caps:swapescape
 setxkbmap -option escape:caps
-#$HOME/.config/polybar/launch.sh &
+"$HOME"/.config/polybar/launch.sh &
