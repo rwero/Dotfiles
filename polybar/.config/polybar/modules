@@ -215,3 +215,5 @@ label = %percentage_used%%
 format-foreground = ${colors.white}
 label-foreground = ${colors.foreground}
 format-padding = 1
+
+
