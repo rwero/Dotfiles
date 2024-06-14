@@ -6,6 +6,7 @@ sxhkd &
 killall dunst
 dunst &
 picom &
+nm-applet &
 
 ~/.local/bin/battery_monitor.sh &
 
