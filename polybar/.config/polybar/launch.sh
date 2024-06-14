@@ -12,3 +12,4 @@ polybar middle &
 polybar time &
 polybar battery &
 polybar network &
+polybar brightness &
