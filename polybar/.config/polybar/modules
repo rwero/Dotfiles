@@ -214,3 +214,7 @@ label-foreground = ${colors.foreground}
 format-padding = 1
 
 
+[module/tray]
+type = internal/tray
+
+tray-size = 66%
