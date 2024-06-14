@@ -105,8 +105,7 @@ unknown-as-up = true
 accumulate-stats = true
 
 format-connected = <ramp-signal> <label-connected>
-label-connected = " "
-label-connected-padding-left = 4px
+label-connected = ""
 
 ramp-signal-0 =  
 

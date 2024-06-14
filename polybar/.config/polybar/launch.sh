@@ -11,3 +11,4 @@ polybar mybar &
 polybar middle &
 polybar time &
 polybar battery &
+polybar network &
