@@ -177,7 +177,6 @@ format-muted = <label-muted>
 
 label-muted = 
 format-muted-padding = 2
-format-volume-padding = 10px
 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -194,7 +193,6 @@ format =  <label>
 format-foreground = ${colors.foreground}
 label-foreground = ${colors.foreground}
 label = %percentage%
-label-padding-right = 1
 label-padding-left = 2px
 
 [module/cpu]

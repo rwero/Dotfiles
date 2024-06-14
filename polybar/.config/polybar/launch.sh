@@ -14,3 +14,4 @@ polybar battery &
 polybar network &
 polybar brightness &
 polybar cpu &
+polybar volume &
